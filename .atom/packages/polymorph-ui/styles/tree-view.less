@@ -1,0 +1,41 @@
+atom-workspace {
+  .tree-view-resizer {
+    background-color: @tree-view-background-color;
+    overflow: visible;
+  }
+
+  .tree-view {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    overflow: visible;
+    & .directory {
+      &::before {
+        display: none!important;
+      }
+    }
+    & > .directory {
+      & > .header {
+        line-height: @tab-height;
+        width: 100%;
+        height: @tab-height;
+        padding-top: @component-padding/2;
+        z-index: 2000;
+        font-weight: bold;
+        color: @text-color-highlight;
+        overflow: visible;
+        &::before {
+          visibility: hidden;
+        }
+      }
+      & > .entries {
+        padding-bottom: @component-padding;
+      }
+    }
+    & > .directory:not(:first-child) {
+      & > .header {
+        border-top: 1px solid @base-border-color;
+      }
+    }
+  }
+}

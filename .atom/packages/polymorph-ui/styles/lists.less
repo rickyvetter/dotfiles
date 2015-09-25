@@ -1,0 +1,56 @@
+.list-group .list-item,
+.list-tree .list-item {
+  .text(normal);
+  background: transparent;
+
+  &.status-added { .text(success); }
+  &.status-ignored { .text(subtle); }
+  &.status-modified { .text(warning); }
+  &.status-removed { .text(error); }
+  &.status-renamed { .text(info); }
+
+  &:hover {
+    color: @text-color-highlight;
+  }
+  &.selected {
+    color: @text-color-selected;
+  }
+}
+
+.select-list.popover-list {
+  background: @overlay-background-color;
+  padding: @component-padding/2 0 @component-padding/2 0;
+  .overlay-shadow();
+  border-radius: @component-border-radius;
+  atom-text-editor[mini] {
+    margin-bottom: @component-padding;
+  }
+
+  .list-group li > * {
+    position: relative;
+  }
+
+  .list-group li {
+    padding: 0 @component-padding*2 0 @component-padding*2;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: @component-line-height;
+    }
+    &:hover {
+      color: @text-color-highlight;
+    }
+  }
+  
+  -webkit-animation: show 200ms;
+  @-webkit-keyframes show {
+    0% {opacity: 0.0;}
+    100% {opacity: 1.0;}
+  }
+}
+
+.character-match {
+  font-weight: normal !important;
+}

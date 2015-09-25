@@ -1,0 +1,68 @@
+"*":
+  "exception-reporting":
+    userId: "3ea8135a-fde9-d570-9bfa-9c241a6106a3"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-dark-ui"
+      "oceanic-next-ricky"
+    ]
+    disabledPackages: [
+      "vim-mode"
+      "nuclide-hg-repository"
+      "nuclide-hack"
+      "nuclide-flow"
+      "nuclide-language-hack"
+      "nuclide-remote-projects"
+      "atom-color-highlight"
+      "tree-view"
+    ]
+  editor:
+    invisibles: {}
+    tabLength: 4
+    showIndentGuide: true
+    softTabs: false
+    showInvisibles: true
+    fontSize: 18
+  "isotope-ui":
+    customBackgroundColorPicker:
+      red: 103
+      green: 36
+      blue: 160
+      alpha: 1
+    backgroundColor: "false"
+    fontFamily: "System Default"
+    matchEditorFont: true
+  linter: {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+  "git-blame": {}
+  jumpy: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode":
+    startInInsertMode: true
+  irc:
+    nickname: "rickyvetter"
+    host: "card.freenode.net"
+    channels: "reactjs"
+    connectOnStartup: true
+    secure: true
+  "language-babel":
+    babelMapsAddUrl: false
+    transpileOnSave: false
+    createTargetDirectories: false
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []
+  "nuclide-click-to-symbol":
+    useCmdKey: false
+  "symbols-tree-view": {}
+  minimap: {}
+  fonts:
+    fontFamily: "Inconsolata-g"
+  "copy-as-rtf": {}

@@ -1,0 +1,116 @@
+@import "colors";
+
+// Base ------------------------------------------------------------------------
+@app-background-color: @bg-shade-two;
+
+@base-background-color: @bg-shade-two;
+@base-border-color:     @bg-shade-five;
+@base-selection-color:  @bg-shade-one;
+@base-input-color:      @bg-shade-one;
+
+@overlay-shadow-color: rgba(0, 0, 0, 0.2);
+@input-shadow-color:   rgba(0, 0, 0, 0.4);
+
+// Text ------------------------------------------------------------------------
+@text-color:           @fg-shade-two;
+@text-color-subtle:    @fg-shade-one;
+@text-color-highlight: @fg-shade-three;
+@text-color-selected:  @text-color-highlight;
+
+@text-color-info:    @color-info;
+@text-color-success: @color-success;
+@text-color-warning: @color-warning;
+@text-color-error:   @color-error;
+
+@text-color-ignored:  @text-color-subtle;
+@text-color-added:    @text-color-success;
+@text-color-renamed:  @text-color-info;
+@text-color-modified: @text-color-warning;
+@text-color-removed:  @text-color-error;
+
+
+// Background-------------------------------------------------------------------
+@background-color-info:      @color-info;
+@background-color-success:   @color-success;
+@background-color-warning:   @color-warning;
+@background-color-error:     @color-error;
+@background-color-highlight: @bg-shade-five;
+@background-color-selected:  @base-selection-color;
+
+
+// Editor ----------------------------------------------------------------------
+@indent-guide-color: @bg-shade-two;
+@invisibles-color: @bg-shade-two;
+
+@gutter-background-color: transparent;
+@gutter-text-color: @text-color-subtle;
+@gutter-text-color-selected: @text-color-selected;
+
+
+// Components ------------------------------------------------------------------
+@pane-item-background-color: @app-background-color;
+@pane-item-border-color:     @base-border-color;
+
+@input-background-color: @base-background-color;
+@input-border-color:     @base-border-color;
+
+@tool-panel-background-color: @bg-shade-four;
+@tool-panel-border-color:     @bg-shade-five;
+
+@inset-panel-background-color: #161719;
+@inset-panel-border-color:     @base-border-color;
+
+@panel-heading-background-color: @app-background-color;
+@panel-heading-border-color:     fadein(@base-border-color, 10%);
+
+@overlay-background-color: @tool-panel-background-color;
+@overlay-border-color:     @base-border-color;
+@overlay-backdrop-color:   fade(@base-background-color, 64%);
+
+@button-background-color:          @bg-shade-one;
+@button-background-color-hover:    @background-color-highlight;
+@button-background-color-selected: @bg-shade-two;
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:    @tool-panel-background-color;
+@tab-bar-border-color:        @tool-panel-border-color;
+@tab-background-color:        @tool-panel-background-color;
+@tab-background-color-active: @base-background-color;
+@tab-border-color:            transparent;
+
+@tree-view-background-color: @bg-shade-two;
+@tree-view-border-color:     @base-border-color;
+
+@scrollbar-background-color: @app-background-color; // Needs to be opaque
+@scrollbar-color:            rgba(92, 92, 92, 0.5);
+
+@tooltip-text-color:           @text-color-highlight;
+@tooltip-background-color:     @background-color-highlight;
+@tooltip-text-key-color:       @base-background-color;
+@tooltip-background-key-color: @background-color-info;
+
+@ui-site-color-1: @background-color-success; // green
+@ui-site-color-2: @background-color-info; // blue
+@ui-site-color-3: @background-color-warning; // orange
+@ui-site-color-4: mix(@color-error, @color-info, 50%); // purple
+@ui-site-color-5: mix(@color-error, @color-success, 50%); // yellow
+
+
+// Sizes -----------------------------------------------------------------------
+@font-size:       13px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding:       8px;
+@component-icon-padding:  4px;
+@component-icon-size:     16px;
+@component-line-height:   24px;
+@component-border-radius: 4px;
+
+@tab-height: 32px;
+@tab-bar-height: @tab-height + @component-padding;
+
+// Other -----------------------------------------------------------------------
+@font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+@transition-time: 200ms;
